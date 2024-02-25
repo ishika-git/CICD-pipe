@@ -8,7 +8,7 @@ pipeline {
 		      }}
 		stage('Build') {
 	           steps {
-			  sh '/home/ishika/Documents/devops_software/apache-maven-3.9.6'
+			  sh '/home/ishika/Documents/devops_software/apache-maven-3.9.6/bin/mvn install'
 	                 }}
 		stage('Deployment'){
 		   steps {
