@@ -23,7 +23,7 @@ triggers {
 		stage('slack-notification'){
 		   steps {
 		     
-		   slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops-1', color: 'good', message: 'This is for test', teamDomain: 'student-1'
+			slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#devops-1', color: 'good', message: 'Configured successfully slack notify.', teamDomain: 'student-work', tokenCredentialId: 'devops-1'
 		   }}
 
 }}
